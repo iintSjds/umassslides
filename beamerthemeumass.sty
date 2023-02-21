@@ -3,7 +3,7 @@
 % Adapted by Andrea Gasparini, andrea@gasparini.cloud for
 % Sapienza presentations.
 % 
-% Original template by Federico Zenith, federico.zenith@sintef.no.
+% Original template by Federico Zenith, federico.zenith@umass.no.
 % Derived (through several iterations) from Håvard Berland's
 % beamerthementnu class.
 %
@@ -23,7 +23,7 @@
 
 % TODO: remove top-right logo from title page
 
-\ProvidesPackage{beamerthemesintef}[2021/11/02]
+\ProvidesPackage{beamerthemeumass}[2021/11/02]
 
 \RequirePackage{etoolbox}
 \RequirePackage{tikz}
@@ -36,7 +36,7 @@
 \RequirePackage{caladea,carlito}
 \renewcommand{\familydefault}{\sfdefault}
 
-\RequirePackage{graphicx,sintefcolor}
+\RequirePackage{graphicx,umasscolor}
 
 % No navigation symbols
 \setbeamertemplate{navigation symbols}{}
@@ -84,21 +84,21 @@
 		\setbeamercolor{normal text}{fg=white,bg=maincolor}
 		\setbeamercolor{structure}{fg=white}
 		\renewcommand{\@logo}{whitelogo}
-		\setbeamercolor{block title}{fg=maincolor,bg=sintefgrey}
-		\setbeamercolor{block body}{fg=darkgray,bg=sintefgrey}
+		\setbeamercolor{block title}{fg=maincolor,bg=umassgrey}
+		\setbeamercolor{block body}{fg=darkgray,bg=umassgrey}
 	}{%
         \setbeamercolor{footline}{fg=darkgray}
 		\setbeamercolor{normal text}{fg=darkgray,bg=white}
 		\setbeamercolor{structure}{fg=maincolor}
 		\renewcommand{\@logo}{logo}
 		\setbeamercolor{block title}{fg=white,bg=maincolor}
-		\setbeamercolor{block body}{fg=darkgray,bg=sintefgrey}
+		\setbeamercolor{block body}{fg=darkgray,bg=umassgrey}
 	}
 }
 \themecolor{white} % Default: white theme
 
 \setbeamercolor{title}{fg=maincolor,bg=white}
-\setbeamercolor{alerted text}{fg=sintefred}
+\setbeamercolor{alerted text}{fg=umassred}
 \setbeamercolor{author}{fg=black}
 \setbeamercolor{date}{fg=black}
 

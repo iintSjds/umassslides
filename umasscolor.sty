@@ -1,0 +1,30 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{umasscolor}[2023/02/21]
+
+\RequirePackage{xcolor}
+
+% Main colour
+% UMass Red
+\definecolor{maincolor}{RGB/cmyk}{136,28,28/9,100,64,48}
+
+% "Warm grey"
+% PMS 429
+\definecolor{umassgrey}{RGB/cmyk}{162,170,173/21,11,9,23}
+\colorlet{umassgray}{umassgrey}
+
+% Greens
+\definecolorset{RGB/cmyk}{umass}{}{lightgreen, 196,214,0/28,0,100, 0;%
+                                    green,       107,165,57/60,0,98,7;%
+                                    darkgreen,    68,105,61/71,8,100,50}
+
+% Additional colours
+\definecolorset{RGB/cmyk}{umass}{}{yellow, 255,199,44/0,19,89,0;%
+                                    red,    254,59,31/0,90,95,0;%
+                                    lilla,  120,  0,80/48,100,27,31}
+
+% Deprecated colours for backward compatibility
+\definecolorset{HTML}{umass}{}{cyan,      22A7E5;%
+                                magenta,   EC008C;%
+                                lightgrey, D8D0C7}
+\colorlet{umasslightgray}{umasslightgrey}
+

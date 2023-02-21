@@ -1,6 +1,6 @@
 \documentclass{beamer}
 \usepackage{amsfonts,amsmath,oldgerm}
-\usetheme{sintef}
+\usetheme{umass}
 
 \newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
 
@@ -66,12 +66,12 @@ you write the content, the computer does the typesetting
 \end{frame}
 
 \begin{frame}[fragile]{Getting Started}
-\framesubtitle{Selecting the SINTEF Theme}
-To start working with \texttt{sintefbeamer}, start a \LaTeX\ document with the
+\framesubtitle{Selecting the UMASS Theme}
+To start working with \texttt{umassbeamer}, start a \LaTeX\ document with the
 preamble:
-\begin{block}{Minimum SINTEF Beamer Document}
+\begin{block}{Minimum UMASS Beamer Document}
 \verb|\documentclass{beamer}|\\
-\verb|\usetheme{sintef}|\\
+\verb|\usetheme{umass}|\\
 \verb|\begin{document}|\\
 \verb|\begin{frame}{Hello, world!}|\\
 \verb|\end{frame}|\\
@@ -120,7 +120,7 @@ will be clipped to a split view on the right side of the title slide.
 
 \section{Personalization}
 
-\footlinecolor{sintefyellow}
+\footlinecolor{umassyellow}
 \begin{frame}[fragile]{Changing Slide Style}
 \begin{itemize}
 \item You can select the white or \textit{maincolor} \textbf{slide style} \emph{in the 
@@ -136,8 +136,8 @@ preamble} with \verb|\themecolor{white}| (default) or \verb|\themecolor{main}|
       \begin{itemize}
       \item Place the command \emph{before} a new \verb|frame|
       \item There are four ``official'' colors: 
-      \testcolor{maincolor}, \testcolor{sintefyellow}, 
-      \testcolor{sintefgreen}, \testcolor{sintefdarkgreen}
+      \testcolor{maincolor}, \testcolor{umassyellow}, 
+      \testcolor{umassgreen}, \testcolor{umassdarkgreen}
       \item Default is no footline; you can restore it with 
       \verb|\footlinecolor{}|
       \item Others may work, but no guarantees!
@@ -159,19 +159,19 @@ content...
 \end{block}
 \end{column}
 \begin{column}{0.7\textwidth}
-\begin{colorblock}[black]{sinteflightgreen}{Colour Blocks}
+\begin{colorblock}[black]{umasslightgreen}{Colour Blocks}
 Similar to the ones on the left, but you pick the colour. Text will be white by 
 default, but you may set it with an optional argument.
 \small
 \begin{verbatim}
-\begin{colorblock}[black]{sinteflightgreen}{title}
+\begin{colorblock}[black]{umasslightgreen}{title}
 content...
 \end{colorblock}
 \end{verbatim}
 \end{colorblock}
-The ``official'' colours of colour blocks are: \testcolor{sinteflilla}, 
-\testcolor{maincolor}, \testcolor{sintefdarkgreen}, and 
-\testcolor{sintefyellow}.
+The ``official'' colours of colour blocks are: \testcolor{umasslilla}, 
+\testcolor{maincolor}, \testcolor{umassdarkgreen}, and 
+\testcolor{umassyellow}.
 \end{column}
 \end{columns}
 \end{frame}
@@ -181,18 +181,18 @@ The ``official'' colours of colour blocks are: \testcolor{sinteflilla},
 \begin{itemize}[<alert@2>]
   \item You can use colours with the
         \verb|\textcolor{<color name>}{text}| command
-  \item The colours are defined in the \texttt{sintefcolor} package:
+  \item The colours are defined in the \texttt{umasscolor} package:
   \begin{itemize}
   \item Primary colours: \testcolor{maincolor} and its sidekick 
-  \testcolor{sintefgrey}
-  \item Three shades of green: \testcolor{sinteflightgreen}, 
-  \testcolor{sintefgreen}, \testcolor{sintefdarkgreen}
-  \item Additional colours: \testcolor{sintefyellow}, \testcolor{sintefred}, 
-        \testcolor{sinteflilla}
+  \testcolor{umassgrey}
+  \item Three shades of green: \testcolor{umasslightgreen}, 
+  \testcolor{umassgreen}, \testcolor{umassdarkgreen}
+  \item Additional colours: \testcolor{umassyellow}, \testcolor{umassred}, 
+        \testcolor{umasslilla}
         \begin{itemize}
-        \item These may be shaded---see the \verb|sintefcolor| documentation or 
-        the \hrefcol{https://sintef.sharepoint.com/sites/stottetjenester/%
-        kommunikasjon/grafisk-profil-new/Sider/default.aspx}{SINTEF profile 
+        \item These may be shaded---see the \verb|umasscolor| documentation or 
+        the \hrefcol{https://umass.sharepoint.com/sites/stottetjenester/%
+        kommunikasjon/grafisk-profil-new/Sider/default.aspx}{UMASS profile 
         manual}
         \end{itemize}
   \end{itemize}
@@ -255,16 +255,16 @@ And this the second
 \end{itemize}
 \end{chapter}
 
-\footlinecolor{sintefred}
+\footlinecolor{umassred}
 \begin{frame}[fragile]{Chapter slides}
 \begin{itemize}
 \item Similar to \verb|frame|s, but with a few more options
 \item Opened with \verb|\begin{chapter}[<image>]{<color>}{<title>}|
 \item Image is optional, colour and title are mandatory
 \item There are seven ``official'' colours: \testcolor{maincolor}, 
-\testcolor{sintefdarkgreen}, \testcolor{sintefgreen}, 
-\testcolor{sinteflightgreen}, \testcolor{sintefred}, \testcolor{sintefyellow}, 
-\testcolor{sinteflilla}.
+\testcolor{umassdarkgreen}, \testcolor{umassgreen}, 
+\testcolor{umasslightgreen}, \testcolor{umassred}, \testcolor{umassyellow}, 
+\testcolor{umasslilla}.
       \begin{itemize}
       \item Strangely enough, these are \emph{more} than the official colours 
       for the footline.
@@ -314,7 +314,7 @@ them)}}
       16:9 presentation to 4:3 one; spacings \emph{will} break
       \begin{itemize}
       \item The \texttt{aspectratio} argument to the \texttt{beamer} class is
-            overridden by the SINTEF theme
+            overridden by the UMASS theme
       \item If you \emph{really} know what you are doing, check the package
             code and look for the \texttt{geometry} class.
       \end{itemize}
