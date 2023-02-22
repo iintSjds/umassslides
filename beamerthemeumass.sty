@@ -84,15 +84,15 @@
 		\setbeamercolor{normal text}{fg=white,bg=maincolor}
 		\setbeamercolor{structure}{fg=white}
 		\renewcommand{\@logo}{whitelogo}
-		\setbeamercolor{block title}{fg=maincolor,bg=umassgrey}
-		\setbeamercolor{block body}{fg=darkgray,bg=umassgrey}
+		\setbeamercolor{block title}{fg=maincolor,bg=umasslightgrey}
+		\setbeamercolor{block body}{fg=darkgray,bg=umasslightgrey}
 	}{%
         \setbeamercolor{footline}{fg=darkgray}
 		\setbeamercolor{normal text}{fg=darkgray,bg=white}
 		\setbeamercolor{structure}{fg=maincolor}
 		\renewcommand{\@logo}{logo}
 		\setbeamercolor{block title}{fg=white,bg=maincolor}
-		\setbeamercolor{block body}{fg=darkgray,bg=umassgrey}
+		\setbeamercolor{block body}{fg=darkgray,bg=umasslightgrey}
 	}
 }
 \themecolor{white} % Default: white theme
@@ -275,10 +275,10 @@
     \begin{minipage}{\textwidth}
       \usebeamercolor[fg]{normal text}
       \centering
-      \ifstrequal{#1}{notitle}{}{
-        \Huge \inserttitle
-        \vspace{5mm}
-      }
+      % \ifstrequal{#1}{notitle}{}{
+      %   \Huge \inserttitle
+      %   \vspace{5mm}
+      % }
       \Large \textsl{Thank you for listening! \\ Any questions?}
     \end{minipage}
   \end{frame}
